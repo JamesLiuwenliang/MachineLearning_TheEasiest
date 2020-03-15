@@ -7,9 +7,9 @@ from collections import Counter
 # x       : 要判断的样品(可以是个1*2的矩阵)
 def kNN_classify(k,X_train ,y_train,x):
     assert 1<= k <= X_train.shape[0], "k must be valid."
-    assert X_train.shape[0] == y_train.shape[0] , \
+    assert X_train.shape[0] == y_train.shape[0], \
         "the size of X_train must equal to the size of y_train"
-    assert X_train.shape[1] == x.shape[0] , \ 
+    assert X_train.shape[1] == x.shape[0], \
         "the feature number of x must be equal to X_train"
 
     # 算出样本点(已知其鸢尾花种类)相对于x的距离
